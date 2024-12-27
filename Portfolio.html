@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #4caf50;
+            --secondary-color: #34495e;
+            --background-color: #ecf0f1;
+            --text-color: #2c3e50;
+            --card-background: #ffffff;
+            --card-shadow: rgba(0, 0, 0, 0.1);
+            --highlight-color: #f39c12;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            color: #fff;
+            padding: 2rem 7%;
+            text-align: center;
+        }
+
+        header .logo {
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: default;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: var(--highlight-color);
+            color: #fff;
+        }
+
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        #about {
+            background-color: var(--card-background);
+            box-shadow: 0 4px 6px var(--card-shadow);
+            margin: 1rem auto;
+            width: 90%;
+            max-width: 800px;
+            border-radius: 10px;
+            padding: 2rem;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .project {
+            background-color: var(--card-background);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px var(--card-shadow);
+            padding: 1rem;
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: var(--secondary-color);
+            color: #fff;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .social-media a {
+            display: inline-block;
+            margin: 0.5rem;
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .social-media a:hover {
+            color: var(--highlight-color);
+        }
+
+        .social-media img {
+            vertical-align: middle;
+            margin-right: 0.5rem;
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Portfolio</div>
+        <nav class="navbar">
+            <a href="#about" class="active">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
+            <img src="Its me.jpg" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 50%; box-shadow: 0 4px 6px var(--card-shadow);">
+            <p style="flex: 1; text-align: left;">
+                Hello! I am <b>Aniket.N.Moon</b>, a passionate web developer. I enjoy creating and building projects that make a difference. Currently pursuing a B.Tech degree from Savitribai Pune University.
+            </p>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Project 1</h3>
+                <a href="D:\html\Time Table.html" target="_blank">Professional College Timetable</a>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <a href="D:\html\IDcard.html" target="_blank">Creating ZCOER ID Card </a>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <a href="D:\html\College Form.html" target="_blank">Application Form for a Collage Student</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out via email at <a href="mailto:aniketmoon08@gmail.com">aniketmoon08@gmail.com</a>.</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/aniket.mn/"><img src="instagram logo.png">aniket.mn</a>
+            <a href="https://www.linkedin.com/in/aniket-moon-b7797a332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="linkedin logo2.avif"> Aniket Moon </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Thank you for visiting my portfolio!</p>
+    </footer>
+</body>
+</html>
